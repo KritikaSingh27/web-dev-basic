@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div>
+        <header><h1>Google Search</h1></header>
+        <main>
+            <form action="https://www.google.com/search">
+                <label for="search">Enter What you want to search on Google: </label>
+                <input type="text" placehoder="Search here" id="search" name="q"/>
+                <button type="submit"> Search </button>
+            </form>
+        </main>
+    </div>
+    <hr>
+    <div>
+        <header><h1>Registration Form</h1></header>
+        <main>
+            <form action="\action">
+                <input type="text" id="fname" name="fname" placeholder="First name">
+                <input type="text" id="lname" name="lname" placeholder="Last name">
+                <br>
+                <label for="gender">Please select Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male" aria-checked="true">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+                <label for="terms">Do you agree all terms of Service? </label>
+                <input type="checkbox" name="yes" id="terms" checked/>Yes, I agree
+                <br>
+                <button type="submit">Register</button>
+            </form>
+        </main>
+    </div>
+    <hr>
+    <div>
+        <form action="\action">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"/>
+            <br>
+            <label for="sex">Sex:</label>
+            <input type="radio" id="m" name="sex" value="m"/>
+            <label for="m">Male</label>
+            <input type="radio" id="f" name="sex" value="f"/>
+            <label for="m">Female</label>
+            <br>
+            <label for="country">Country: </label>
+            <select name="country" id="country">
+                <option>Select an Option</option>
+                <option value="ind">India</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="msg">Message:</label>
+            <textarea name="mdg" id="msg"></textarea>
+            <br>
+            <label for="subs">Subscribe?</label>
+            <input type="checkbox" name="subs" id="subs">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <header><h1>Feedback Form</h1></header>
+        <form action="\action">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Write your name"/>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Write your email"/>
+            <br>
+            <label for="msg">Message:</label>
+            <br>
+            <textarea name="msg" id="msg"></textarea>
+            <br>
+            <label for="rate">Rate us out of 5:</label>
+            <br>
+            <input type="radio" name="rate" id="1" value="1"/>
+            <label for="1">1</label>
+            <br>
+            <input type="radio" name="rate" id="2" value="2"/>
+            <label for="2">2</label>
+            <br>
+            <input type="radio" name="rate" id="3" value="3"/>
+            <label for="3">3</label>
+            <br>
+            <input type="radio" name="rate" id="4" value="4"/>
+            <label for="4">4</label>
+            <br>
+            <input type="radio" name="rate" id="5" value="5"/>
+            <label for="5">5</label>
+            <br>
+            <button type="submit">Send your message!</button>
+        </form>
+    </div>
+</body>
+</html>>
